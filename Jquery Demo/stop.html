@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        .st,#panel{
+            background-color: brown;
+            text-align: center;
+            color: white;
+
+        }
+        #panel{
+            display: none;
+            height: 500px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $("#panel").slideDown(5000)
+            });
+            $("#panel").hover(function(){
+                $("#panel").stop()
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="st">
+        <h1>Click</h1>
+    </div>
+    <div id="panel">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit cupiditate accusamus ab, doloremque itaque molestias pariatur tempore minima. Quaerat, neque! Error ipsa inventore repellendus dolorum, nulla corrupti. Suscipit, necessitatibus dolores!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fuga excepturi nemo esse nobis accusantium culpa quasi consectetur, pariatur voluptate nihil sequi labore. Necessitatibus excepturi aperiam nemo nisi blanditiis aliquid.</p>
+    </div>
+</body>
+</html>

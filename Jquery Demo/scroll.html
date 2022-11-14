@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        var ab=0;
+        $(document).ready(function(){
+            $("div").scroll(function(){
+                $(".ab").css(
+                {
+                    "color":"red",
+                    "background-color":"yellow",
+                    "text-align":"center"
+                })
+                // $(".ab").css();
+                // $(".ab").css();
+            })
+        })
+    </script>
+    <style>
+        div{
+            height: 350px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<h1 class="ab">Scroll</h1> 
+
+<div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex voluptas velit harum magni maiores voluptate quibusdam natus quidem, quasi sequi, repudiandae dicta? Repudiandae excepturi suscipit numquam quod earum molestiae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex voluptas velit harum magni maiores voluptate quibusdam natus quidem, quasi sequi, repudiandae dicta? Repudiandae excepturi suscipit numquam quod earum molestiae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex voluptas velit harum magni maiores voluptate quibusdam natus quidem, quasi sequi, repudiandae dicta? Repudiandae excepturi suscipit numquam quod earum molestiae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex voluptas velit harum magni maiores voluptate quibusdam natus quidem, quasi sequi, repudiandae dicta? Repudiandae excepturi suscipit numquam quod earum molestiae.</h1>
+</div>
+</body>
+</html>

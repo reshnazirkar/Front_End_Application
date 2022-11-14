@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head-out {
+            height: 100px;
+            background-color: rgba(208, 167, 247, 0.637);
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .right a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .right li {
+            display: inline;
+            margin-right: 80px;
+        }
+
+        .left img {
+            margin: 20px 100px;
+        }
+
+        /* nav{
+            width: 200px;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            background-color: blue;
+        } */
+        #sec1 {
+            height: 400px;
+            background-image: url("images/istockphoto-1354441996-170667a.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-position-y: -350px;
+        }
+
+        .sec1out {
+            text-align: center;
+            width: 400px;
+            height: 150px;
+            background-color: rgba(0, 255, 255, 0.295);
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 12px;
+        }
+
+        .sec1-in {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        .sec2left1,
+        .sec2right1 {
+            height: 400px;
+            width: 46%;
+        }
+
+        .se2right2 {}
+
+        .sec2left1 img {
+            width: 400px;
+        }
+
+        .topdv {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        .s3-di-out {
+            height: 550px;
+            width: 100%;
+            background-image: url("https://images.unsplash.com/photo-1621640786029-220e9ff8dd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eSUyMGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            color: white;
+            /* filter: blur(1px); */
+        }
+
+        .s3-left-di,
+        .s3-right-di {
+            width: 46%;
+            height: 400px;
+        }
+
+        .cen {
+            width: 515px;
+            height: 415px;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        }
+
+        .s3-img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .s3-img img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .s3-bot-img img {
+            width: 100px;
+        }
+
+        .right a:hover {
+            color: rgb(75, 97, 221);
+            text-decoration: underline;
+        }
+        .s3-right-di{
+            display: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <script>
+        // var ab =$(window).scrollTop();
+        // $("html,body").animate({
+        //     scrollTop:ab+$(window).height()
+        // },500);
+
+        $(document).ready(function(){
+            $("#sec1").scrollTop(function(){
+                $(".s3-right-di").fadeIn(5000)
+            },1500);
+            $(".sec2right1").hover(function(){
+                $(".sec2right1 h2,.sec2right1 p").css(
+                    {
+                        'transition':'2s'
+                    }
+                ).slideUp(2000).slideDown(2000).stop();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="head-out">
+            <div class="left">
+                <img src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png"
+                    alt="">
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <!-- <li><a href="">Abour Us</a></li> -->
+                        <li><a href="#sec3">Contact Us</a></li>
+                        <!-- <li><a href="">Services</a></li> -->
+                        <li>Tel: <a href="tel:9526485235">9526485235</a></li>
+                        <li>Mail Id: <a href="mailto:oytie@gmail.com">oytie@gmail.com</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="sec1">
+        <div class="sec1out">
+            <div class="sec1-in">
+                <h1>Welcome To Oytie</h1>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="topdv">
+            <div class="sec2left1">
+                <img src="images/istockphoto-1354441996-170667a.jpg" title="book" alt="">
+            </div>
+            <div class="sec2right1">
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi optio voluptatem ut at
+                    expedita, odio numquam eos consectetur voluptate consequatur sapiente, soluta ipsa iure, obcaecati
+                    enim quibusdam quod nemo.</p>
+            </div>
+        </div>
+        <!-- <div class="bottdv">
+            
+        </div> -->
+    </section>
+    <section id="sec3">
+        <div class="s3-di-out">
+            <div class="s3-left-di">
+                <div class="cen">
+                    <div class="s3-img">
+                        <img src="images/istockphoto-1354441996-170667a.jpg" alt="">
+                    </div>
+                    <div class="s3-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuE2ejpy-CjPVNdAhuIVch-8DRr20pvVwxs2pBWtl&s"
+                            alt="">
+                    </div>
+                    <div class="s3-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuE2ejpy-CjPVNdAhuIVch-8DRr20pvVwxs2pBWtl&s"
+                            alt="">
+                    </div>
+                    <div class="s3-img">
+                        <img src="images/istockphoto-1354441996-170667a.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="s3-right-di">
+                <div class="s3-top">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim esse unde soluta sequi
+                        inventore rem accusamus, eum optio corporis ea debitis necessitatibus maxime sapiente pariatur
+                        sint vel voluptatibus eligendi!</p>
+                </div>
+                <div class="s3mid">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim esse unde soluta sequi
+                        inventore rem accusamus, eum optio corporis ea debitis necessitatibus maxime sapiente pariatur
+                        sint vel voluptatibus eligendi!</p>
+                </div>
+                <div class="s3-bot-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuE2ejpy-CjPVNdAhuIVch-8DRr20pvVwxs2pBWtl&s"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuE2ejpy-CjPVNdAhuIVch-8DRr20pvVwxs2pBWtl&s"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuE2ejpy-CjPVNdAhuIVch-8DRr20pvVwxs2pBWtl&s"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="s4out">
+            <div class="s4carosal">
+                <div class="box">
+                    <img src="https://cdn.shopify.com/s/files/1/0591/9493/articles/Mother-Teresa_1024x1024.jpg?v=1603297536"
+                        alt="">
+                    <h2>ABC XYZ</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquid ad architecto quis
+                        laboriosam totam praesentium placeat! Accusantium possimus eum voluptate non, libero ea quidem,
+                        aut excepturi at, cupiditate cumque!</p>
+                </div>
+                <div class="box">
+                    <img src="https://cdn.shopify.com/s/files/1/0591/9493/articles/Mother-Teresa_1024x1024.jpg?v=1603297536"
+                        alt="">
+                    <h2>ABC XYZ</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquid ad architecto quis
+                        laboriosam totam praesentium placeat! Accusantium possimus eum voluptate non, libero ea quidem,
+                        aut excepturi at, cupiditate cumque!</p>
+                </div>
+                <div class="box">
+                    <img src="https://cdn.shopify.com/s/files/1/0591/9493/articles/Mother-Teresa_1024x1024.jpg?v=1603297536"
+                        alt="">
+                    <h2>ABC XYZ</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquid ad architecto quis
+                        laboriosam totam praesentium placeat! Accusantium possimus eum voluptate non, libero ea quidem,
+                        aut excepturi at, cupiditate cumque!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

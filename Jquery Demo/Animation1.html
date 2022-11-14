@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        .ani{
+            width: 200px;
+            height: 250px;
+            background-color: blueviolet;
+            margin: 50px 200px;
+            position: absolute;
+            /* animation: ab 200ms forwards infinite; */
+        }
+        /* @keyframes ab {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } */
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".ani").animate(
+                    {
+                        // rotate:'360deg',
+                        // left: '+=100px',
+                        left : '500px',
+                        width: '400px',
+                        height: '500px',
+                        
+                    },1000                //"slow"
+                );
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Rotate</button>
+    <div class="ani">
+
+    </div>
+</body>
+</html>

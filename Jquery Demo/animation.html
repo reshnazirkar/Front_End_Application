@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        .out{
+            width: 100%;
+            height: 450px;
+            background-color: blueviolet;
+            background-image: linear-gradient(95deg,rgba(238, 70, 230, 0.329),rgba(39, 189, 39, 0.39),rgba(74, 180, 184, 0.384));
+        }
+        .in{
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-around;
+            text-align: center;
+        }
+        .box{
+            width: 320px;
+            height: 400px;
+            background-color: aqua;
+            border-radius: 12px;
+        }
+        .box img{
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".box").hover(function(){
+                $(".box").animate({
+                    opacity:'0.5',
+                    height:'410px',
+                    width:'320px',
+                    padding:'10px 10px'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <section>
+        <div class="out">
+            <div class="in">
+                <div class="box">
+                    <img src="https://4.bp.blogspot.com/-G8T9dmIXtg4/W8TdzjU5ryI/AAAAAAAAACk/HqE7IAScecYiBf-FJidW30vnaAGUA3SRwCLcBGAs/s320/gandhiji.jpg" alt="">
+                    <h2>Abc Xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum totam sit voluptas est eum quaerat nam reprehenderit inventore nihil sunt quos error repudiandae ex aut odit dolore, hic minus ratione!</p>
+                </div>
+                <div class="box">
+                    <img src="https://4.bp.blogspot.com/-G8T9dmIXtg4/W8TdzjU5ryI/AAAAAAAAACk/HqE7IAScecYiBf-FJidW30vnaAGUA3SRwCLcBGAs/s320/gandhiji.jpg" alt="">
+                    <h2>Abc Xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum totam sit voluptas est eum quaerat nam reprehenderit inventore nihil sunt quos error repudiandae ex aut odit dolore, hic minus ratione!</p>
+                </div>
+                <div class="box">
+                    <img src="https://4.bp.blogspot.com/-G8T9dmIXtg4/W8TdzjU5ryI/AAAAAAAAACk/HqE7IAScecYiBf-FJidW30vnaAGUA3SRwCLcBGAs/s320/gandhiji.jpg" alt="">
+                    <h2>Abc Xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum totam sit voluptas est eum quaerat nam reprehenderit inventore nihil sunt quos error repudiandae ex aut odit dolore, hic minus ratione!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

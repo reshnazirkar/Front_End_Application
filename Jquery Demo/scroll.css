@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+:root{
+    --red: rgba(157, 255, 0, 0.898);
+    --blue: rgba(0, 0, 194, 0.91);
+}
+*::before,
+*::after{
+box-sizing: border-box;
+}
+#circle{
+    /* width: 50%;
+    background-color: var(--red); */
+}
+body{
+    background-color: var(--blue);
+}
+.sec-div-scroll{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec-div-scroll span{
+    font-size: 55px;
+    color: white;
+    font-family: 'Griffy', cursive;
+    display: block;
+    animation: ab 2s linear infinite;
+}
+@keyframes ab {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+body{
+    height: 1000px;
+    overflow: hidden;
+}
